@@ -1,3 +1,5 @@
+#include <stdio.h>
+#include <stdlib.h>
 #include "sort.h"
 /**
  * bubble_sort - Sorts an array of integers in ascending using Bubble Sort
@@ -32,6 +34,5 @@ void bubble_sort(int *array, size_t size)
 
 		if (has_swapped == 0)
 			break;
-		print_array(array, size);
 	}
 }
