@@ -53,6 +53,7 @@ void quicksort_recursive(int *array, int low, int high, size_t size)
 	if (low < high)
 	{
 		int pi = lomuto_partition(array, low, high, size);
+
 		quicksort_recursive(array, low, pi - 1, size);
 		quicksort_recursive(array, pi + 1, high, size);
 	}
