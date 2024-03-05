@@ -22,13 +22,10 @@ void bubble_sort(int *array, size_t size)
 		{
 			if (array[idx_inner] > array[idx_inner + 1])
 			{
-				/*Swap array[idx_inner] and array[idx_inner + 1]*/
 				temp_value = array[idx_inner];
 				array[idx_inner] = array[idx_inner + 1];
 				array[idx_inner + 1] = temp_value;
 				has_swapped = 1;
-
-				/*Print the array after each swap*/
 				print_array(array, size);
 			}
 		}
